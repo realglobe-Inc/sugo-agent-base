@@ -29,20 +29,23 @@
   },
   "devDependencies": {
     "ape-compiling": "^4.3.2",
-    "ape-covering": "*",
-    "ape-formatting": "*",
-    "ape-releasing": "*",
-    "ape-reporting": "*",
-    "ape-tasking": "*",
-    "ape-testing": "*",
-    "ape-tmpl": "*",
-    "ape-updating": "*",
+    "ape-covering": "^3.0.3",
+    "ape-formatting": "^1.0.0",
+    "ape-releasing": "^4.0.1",
+    "ape-reporting": "^3.0.1",
+    "ape-tasking": "^4.0.2",
+    "ape-testing": "^4.0.0",
+    "ape-tmpl": "^5.0.6",
+    "ape-updating": "^4.0.1",
     "coz": "^6.0.3",
     "filedel": "^2.0.1",
-    "injectmock": "*"
+    "injectmock": "^2.0.0"
   },
   "engines": {
     "node": ">=6",
     "npm": ">=3"
+  },
+  "publishConfig": {
+    "registry": "https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-local"
   }
 }
