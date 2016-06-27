@@ -1,0 +1,48 @@
+{
+  "name": "sugo-agent-base",
+  "version": "1.0.0",
+  "description": "Base of sugo agents",
+  "main": "lib",
+  "scripts": {
+    "test": "./ci/test.js",
+    "prepublish": "./ci/build.js && ./ci/browser.js"
+  },
+  "repository": "realglobe-Inc/sugo-agent-base",
+  "keywords": [
+    "SUGOS",
+    "agent"
+  ],
+  "author": {
+    "name": "Taka Okunishi",
+    "email": "okunishitaka.com@gmail.com",
+    "url": "http://okunishitaka.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/realglobe-Inc/sugo-agent-base/issues"
+  },
+  "homepage": "https://github.com/realglobe-Inc/sugo-agent-base#readme",
+  "dependencies": {
+    "apeman-brws-request": "^2.1.3",
+    "apemanrequest": "^1.1.0",
+    "co": "^4.6.0"
+  },
+  "devDependencies": {
+    "ape-compiling": "^4.3.2",
+    "ape-covering": "*",
+    "ape-formatting": "*",
+    "ape-releasing": "*",
+    "ape-reporting": "*",
+    "ape-tasking": "*",
+    "ape-testing": "*",
+    "ape-tmpl": "*",
+    "ape-updating": "*",
+    "coz": "^6.0.3",
+    "filedel": "^2.0.1",
+    "injectmock": "*"
+  },
+  "engines": {
+    "node": ">=6",
+    "npm": ">=3"
+  }
+}
