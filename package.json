@@ -1,7 +1,7 @@
 {
   "name": "sugo-agent-base",
   "version": "1.1.1",
-  "description": "Base of sugo agents",
+  "description": "Base class of HTTP clients for SUGOS",
   "main": "lib",
   "browser": "browser",
   "scripts": {
