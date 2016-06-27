@@ -1,10 +1,10 @@
 /**
- * Test case for sugoAgentBase.
+ * Test case for index.
  * Runs with mocha.
  */
 'use strict'
 
-const SugoAgentBase = require('../lib/sugo_agent_base.js')
+const index = require('../lib/index.js')
 const assert = require('assert')
 const co = require('co')
 
@@ -19,10 +19,10 @@ describe('sugo-agent-base', function () {
 
   }))
 
-  it('Sugo agent base', () => co(function * () {
-    let agent = new SugoAgentBase('http://example.com')
-    assert.ok(agent)
-    assert.equal(agent.url, 'http://example.com')
+  it('Eval props', () => co(function * () {
+    assert.ok(index)
+    assert.ok(index.SugoAgentBase)
+    assert.ok(index())
   }))
 })
 
