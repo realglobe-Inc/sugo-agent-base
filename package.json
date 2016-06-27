@@ -38,9 +38,11 @@
     "ape-testing": "^4.0.0",
     "ape-tmpl": "^5.0.6",
     "ape-updating": "^4.0.1",
+    "apemanrequest": "^1.1.0",
     "coz": "^6.0.3",
     "filedel": "^2.0.1",
-    "injectmock": "^2.0.0"
+    "injectmock": "^2.0.0",
+    "sg-server": "^1.2.2"
   },
   "engines": {
     "node": ">=6",
