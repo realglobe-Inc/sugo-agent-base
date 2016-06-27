@@ -1,6 +1,6 @@
 {
   "name": "sugo-agent-base",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Base of sugo agents",
   "main": "lib",
   "browser": "browser",
