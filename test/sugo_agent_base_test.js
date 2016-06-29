@@ -39,6 +39,12 @@ describe('sugo-agent-base', function () {
     let ok = yield agent.knock('/api/foo')
     assert.ok(ok)
   }))
+
+  it('Resolve paths', () => co(function * () {
+    let agent = new SugoAgentBase('http://example.com/foo/bar')
+    assert.equal(agent.resolve('/baz'), 'http://example.com/baz')
+    assert.equal(agent.resolve('baz'), 'http://example.com/foo/bar/baz')
+  }))
 })
 
 /* global describe, before, after, it */
