@@ -30,4 +30,4 @@ node_modules
 .idea
 tmp
 
-browser
+sims/browser
