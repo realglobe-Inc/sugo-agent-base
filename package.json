@@ -1,6 +1,6 @@
 {
   "name": "sugo-agent-base",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Base class of HTTP clients for SUGOS",
   "main": "lib",
   "browser": "sims/browser",
@@ -24,16 +24,16 @@
   },
   "homepage": "https://github.com/realglobe-Inc/sugo-agent-base#readme",
   "dependencies": {
-    "apeman-brws-request": "^2.1.4",
+    "apeman-brws-request": "^2.1.8",
     "co": "^4.6.0"
   },
   "devDependencies": {
     "ape-tmpl": "^5.0.11",
     "coz": "^6.0.3",
     "injectmock": "^2.0.0",
-    "sg-server": "^1.2.5",
-    "sugos-assets": "^1.1.5",
-    "sugos-ci": "^1.4.5"
+    "sg-server": "^1.2.7",
+    "sugos-assets": "^1.1.9",
+    "sugos-ci": "^1.7.1"
   },
   "engines": {
     "node": ">=6",
