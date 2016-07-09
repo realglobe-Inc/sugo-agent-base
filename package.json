@@ -1,6 +1,6 @@
 {
   "name": "sugo-agent-base",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Base class of HTTP clients for SUGOS",
   "main": "lib",
   "browser": "sims/browser",
