@@ -32,7 +32,7 @@
     "coz": "^6.0.14",
     "injectmock": "^2.0.0",
     "sg-server": "^1.2.8",
-    "sugo-ci-agent": "^1.0.5",
+    "sugo-ci-agent": "^1.0.6",
     "sugos-assets": "^2.0.1"
   },
   "engines": {
