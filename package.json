@@ -24,16 +24,16 @@
   },
   "homepage": "https://github.com/realglobe-Inc/sugo-agent-base#readme",
   "dependencies": {
-    "apeman-brws-request": "^2.1.9",
+    "brequest": "^1.0.0",
     "co": "^4.6.0"
   },
   "devDependencies": {
-    "ape-tmpl": "^5.0.11",
-    "coz": "^6.0.3",
+    "ape-tmpl": "^5.0.14",
+    "coz": "^6.0.14",
     "injectmock": "^2.0.0",
-    "sg-server": "^1.2.7",
-    "sugo-ci-agent": "^1.0.1",
-    "sugos-assets": "^1.1.9"
+    "sg-server": "^1.2.8",
+    "sugo-ci-agent": "^1.0.5",
+    "sugos-assets": "^2.0.1"
   },
   "engines": {
     "node": ">=6",
