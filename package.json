@@ -1,6 +1,6 @@
 {
   "name": "sugo-agent-base",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "Base class of HTTP clients for SUGOS",
   "main": "lib",
   "browser": "shim/browser",
