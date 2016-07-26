@@ -3,7 +3,7 @@
   "version": "1.2.8",
   "description": "Base class of HTTP clients for SUGOS",
   "main": "lib",
-  "browser": "sims/browser",
+  "browser": "shim/browser",
   "scripts": {
     "test": "./ci/test.js",
     "prepublish": "./ci/build.js && ./ci/browser.js"
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/realglobe-Inc/sugo-agent-base#readme",
   "dependencies": {
-    "brequest": "^1.0.0",
+    "brequest": "^1.0.1",
     "co": "^4.6.0"
   },
   "devDependencies": {
@@ -32,7 +32,7 @@
     "coz": "^6.0.14",
     "injectmock": "^2.0.0",
     "sg-server": "^1.2.8",
-    "sugo-ci-agent": "^1.0.6",
+    "sugo-ci-agent": "^1.0.7",
     "sugos-assets": "^2.0.1"
   },
   "engines": {
