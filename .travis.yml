@@ -2,9 +2,9 @@ language: node_js
 node_js:
 - '6'
 before_install:
-- echo "registry = https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-virtual" > .npmrc
-- curl -u${NPM_USER}:${NPM_PASSWORD} "https://realglobe.artifactoryonline.com/realglobe/api/npm/auth" >> .npmrc
-- cat .npmrc
+- echo "registry = https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-virtual" > $HOME/.npmrc
+- curl -u${NPM_USER}:${NPM_PASSWORD} "https://realglobe.artifactoryonline.com/realglobe/api/npm/auth" >> $HOME/.npmrc
+- cat $HOME/.npmrc
 - npm install istanbul mocha babel-cli -g
 install:
 - npm install babel-preset-es2015
@@ -14,3 +14,8 @@ script:
 - ./ci/test.js
 - ./ci/cover.js
 - ./ci/report.js
+after_success:
+- ./ci/travis/publish.js
+- ./ci/travis/push_sugos_index.js
+env:
+  secure: "Yb0f7aMLvp+7JywX+J0AZ4V/+IL17rrzWvU88XS/XLmbK3WF5BM2sFAmF2FgD4jtVsfuIYQZchF6WLykVE3Q3mz4ksZSLBmcxZJMbqp2iLRRp4yGppSGzuspGbu5wTN2RqDYBqivI0ouHOYvpbA4WmioKfj4orq7zgdJZcQDAQ+cO94yIjDNsl9D/EBDRHlgM4GqTawkmv6//RyDA33/YIB/ovcJXxTW8gPtrpWIdINfc0Pmoz+i+kD1U27AP5BQ0cqxDV8QC9yZDv0Ckg+eSkvqBS7lYj78s4DEZhRc2hy8nGwfJXsULWZsNoj7MvynsF2xmwrWMptIsT8mFqfqGgw/kEq9gskNuFaNHzu93jy7mkE8y1mpaEhhv43nAQb8CJggbEmSrErGu94Nhhfbmfq2ahd98CT+OWDf14gHOD4nGwre5GAsNzLHL38J0B/swsOeIBurGoK22VzBDu/veal3bI3JL8O/tcxft/zglpR+Q+NNiz/X6CO8QTYqq06QgvMj0kFj8Gr/LH0hQiNAI39KCELFrNJNWetbbPb3le+Kk9EZ42EcnJ+iN+f5vrL4EBg7C5wHLyR3z0cQWu6w401lgZVQFhqndaa0ReO14OEpH4/A4dY8VibDtrrsvuk6Ml2s3hN1X3dBSFMy56CZs2qoXwxYbK/1BbES48O2FGo="
